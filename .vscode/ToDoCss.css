@@ -1,0 +1,111 @@
+body {
+    background-color: #d3ebf7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add-btn:hover {
+    background-color: #4cae4c;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item .edit-btn,
+.todo-item .delete-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.todo-item .edit-btn:hover,
+.todo-item .delete-btn:hover {
+    color: #555;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+  
+#remove-checked-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.completed {
+    text-decoration: line-through; 
+    color: grey; 
+}
+
+
+#remove-checked-btn:hover {
+    background-color: #c9302c;
+}
+
+#task-count {
+    color: #5cb85c;
+}
